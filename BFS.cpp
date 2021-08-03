@@ -6,7 +6,7 @@ inline void bfs(vector<int> &d, int x){
 		pair<int,int> it = q.front();
 		q.pop();
 		for(int i : g[it.first]){
-			if(d[i] == ){
+			if(d[i] > it.second + 1){
 				d[i] = it.second + 1;
 				q.push({i,d[i]});
 			}
