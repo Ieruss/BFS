@@ -1,4 +1,4 @@
-inline void bfs(vector<int> &d, int x){
+void bfs(vector<int> &d, int x){
 	d[x] = 0;
 	queue<pair<int,int> >q;
 	q.push({x,d[x]});
